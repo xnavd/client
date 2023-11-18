@@ -7,6 +7,7 @@ import {
   AiTwotonePhone,
   AiOutlineMail,
 } from "react-icons/ai";
+import Container from "../components/Container";
 
 const Contact = () => {
   return (
@@ -14,8 +15,7 @@ const Contact = () => {
       {" "}
       <Meta title={"Contact"} />
       <BreadCrumb title="Contact" />
-      <div className="contact-wrapper home-wrapper-2 py-5">
-        <div className="container-xxl">
+      <Container class1="contact-wrapper home-wrapper-2 py-5">
           <div className="row">
             <div className="col-12">
               <iframe
@@ -95,8 +95,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      </Container>
     </>
   );
 };

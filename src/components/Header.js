@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import Cart from "../pages/Cart";
 const Header = () => {
   return (
     <>
@@ -28,7 +29,9 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h1>
-                <Link to={""} className="text-white">Digitic</Link>
+                <Link to={""} className="text-white">
+                  Digitic
+                </Link>
               </h1>
             </div>
             <div className="col-5">
@@ -48,7 +51,10 @@ const Header = () => {
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
-                  <Link to={"compare"} className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to={"compare"}
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="images/compare.svg" alt="compare" />
                     <p className="mb-0">
                       So sánh <br />
@@ -57,8 +63,11 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link to={"wishlist"} className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/wishlist.svg" alt="wishlist" />
+                  <Link
+                    to={"wishlist"}
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
+                    <img src="../images/wishlist.svg" alt="wishlist" />
                     <p className="mb-0">
                       Danh sách <br />
                       yêu thích
@@ -66,7 +75,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link to={"login"} className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to={"login"}
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="images/user.svg" alt="user" />
                     <p className="mb-0">
                       Đăng nhập
@@ -76,8 +88,11 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link to={"cart"} className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/cart.svg" alt="cart" />
+                  <Link
+                    to="/cart"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
+                    <img src={Cart} alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
                       <p className="mb-0">$ 500</p>
@@ -133,7 +148,7 @@ const Header = () => {
                     <NavLink to="/" className="text-white">
                       Home
                     </NavLink>
-                    <NavLink to="/store" className="text-white">
+                    <NavLink to="/product" className="text-white">
                       Our Store
                     </NavLink>
                     <NavLink to="/blog" className="text-white">
